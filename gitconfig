@@ -1,1 +1,12 @@
-/Users/lanstonpeng/.gitconfig
+[user]
+	name = lanstonpeng
+	email = lanstonpeng@gmail.com
+[credential]
+	helper = osxkeychain
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
