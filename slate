@@ -37,9 +37,10 @@ bind b:${hyper} layout xcodemonitor
 bind s:alt focus 'Spotify'
 bind o:alt focus 'Xcode'
 bind l:alt focus 'Google Chrome'
-bind n:alt focus 'Path Finder'
+bind n:alt focus 'Finder'
 bind m:alt focus 'Sublime Text'
-bind i:alt focus 'MacVim'
+bind i:alt focus 'iOS Simulator'
 bind v:alt focus 'Evernote'
+bind d:alt focus 'Dictionary'
 
 

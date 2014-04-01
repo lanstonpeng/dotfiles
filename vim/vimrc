@@ -205,7 +205,7 @@ let g:ctrlp_map = '<c-p>'
 "let g:snips_trigger_key='<C-u>'
 
 " Keybindings for plugin toggle
-nmap <F5> :TagbarToggle<cr>
+" nmap <F5> :TagbarToggle<cr>
 nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>

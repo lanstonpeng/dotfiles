@@ -20,10 +20,9 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx)
+plugins=(git osx autojump tmux)
 
 source $ZSH/oh-my-zsh.sh
-
 # Customize to your needs...
 export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
 export CLICOLOR=1;
@@ -32,7 +31,7 @@ export TERM=xterm-256color
 export EDITOR=vim
 
 alias  gvim='~/Desktop/MacVim.app/Contents/MacOS/MacVim '
-alias  fuckgfw="sudo python ~/Desktop/goagent/local/proxy.py"
+alias  fuckgfw="python ~/Desktop/goagent/local/proxy.py"
 alias  totux="ssh lanstonpeng@222.200.98.151"
 alias  cleanzsh='sudo rm /private/var/log/asl/*.asl'
 alias  c='pygmentize -O style=monokai -f console256 -g'
@@ -70,7 +69,7 @@ alias speedup="sudo rm /var/log/asl/*.asl;"
 alias cpcur="pwd | pbcopy"
 alias tocur="cd `pbpaste`"
 
-
+sh ~/shell/startTmux.sh
 #for tech|useful
 alias whatip="curl ifconfig.me"
 alias pyserver="python -m SimpleHTTPServer"
@@ -116,19 +115,6 @@ function svn {
     }
     else if   ($1=="X") {
       print "\033[33m" $0 "\033[00m";  # No changes in yellow.
-    }
-    else if   ($1=="At" || $1 == "External") {
-      print "\033[33m" $0 "\033[00m";  # Revision numbers in brown.
-    }
-    else                {
-      print $0;                        # No color, just print the line
-    }
-  }
-  END {
-    print cpt_c, " conflicts are found.";
-  }';
-}
-\033[00m";  # No changes in yellow.
     }
     else if   ($1=="At" || $1 == "External") {
       print "\033[33m" $0 "\033[00m";  # Revision numbers in brown.
