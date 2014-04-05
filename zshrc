@@ -76,6 +76,7 @@ alias pyserver="python -m SimpleHTTPServer"
 alias showmebaby="vim ~/Dropbox/githubs/dotFile/useful.md"
 alias grep='grep --exclude-dir=".svn"'
 
+alias subl='open -a Sublime\ Text $1'
 function grp(){
     grep -rIn  --exclude-dir="\.svn" $1 *;
 }
