@@ -77,6 +77,7 @@ alias showmebaby="vim ~/Dropbox/githubs/dotFile/useful.md"
 alias grep='grep --exclude-dir=".svn"'
 
 alias subl='open -a Sublime\ Text $1'
+alias atom='open -a Atom $1'
 function grp(){
     grep -rIn  --exclude-dir="\.svn" $1 *;
 }
