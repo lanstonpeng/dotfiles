@@ -32,7 +32,6 @@ export EDITOR=vim
 
 alias  gvim='~/Desktop/MacVim.app/Contents/MacOS/MacVim '
 alias  fuckgfw="python ~/Desktop/goagent/local/proxy.py"
-alias  totux="ssh lanstonpeng@222.200.98.151"
 alias  cleanzsh='sudo rm /private/var/log/asl/*.asl'
 alias  c='pygmentize -O style=monokai -f console256 -g'
 alias  extract="dtrx"
@@ -78,6 +77,7 @@ alias grep='grep --exclude-dir=".svn"'
 
 alias subl='open -a Sublime\ Text $1'
 alias atom='open -a Atom $1'
+alias linode='ssh lanstonpeng@106.186.120.207'
 function grp(){
     grep -rIn  --exclude-dir="\.svn" $1 *;
 }
@@ -89,7 +89,7 @@ function svn {
     command svn "$@";
     return;
   fi
- 
+
   # Pipe svn through awk to colorize its output.
   command svn "$@" | awk '
   BEGIN {

@@ -8,7 +8,7 @@ config windowHintsShowIcons true
 config windowHintsIgnoreHiddenWindows false
 config windowHintsSpread true
 
-bind g:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
+#bind g:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
 bind e:cmd grid padding:5 0:6,2
 
 alias hyper ctrl;alt;cmd
