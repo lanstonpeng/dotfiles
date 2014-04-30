@@ -20,7 +20,7 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx autojump tmux)
+plugins=(git osx autojump tmux z)
 
 source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
@@ -37,7 +37,6 @@ alias  c='pygmentize -O style=monokai -f console256 -g'
 alias  extract="dtrx"
 #alias  suckPD="sudo rm /Library/Preferences/Parallels/licenses.xml"
 alias  vi="vim"
-alias  z="cd"
 
 # View HTTP traffic
  alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
@@ -77,6 +76,7 @@ alias grep='grep --exclude-dir=".svn"'
 
 alias subl='open -a Sublime\ Text $1'
 alias atom='open -a Atom $1'
+alias mou='open -a Mou $1'
 alias linode='ssh lanstonpeng@106.186.120.207'
 function grp(){
     grep -rIn  --exclude-dir="\.svn" $1 *;
